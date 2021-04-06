@@ -5,6 +5,7 @@
 	"homepage": ".",
 	"dependencies": {
 		"express": "^4.17.1",
+		"moment": "^2.29.1",
 		"node-fetch": "^2.6.1",
 		"redis": "^3.0.2"
 	},
@@ -13,5 +14,10 @@
 	},
 	"scripts": {
 		"start": "nodemon server.js"
+	},
+	"nodemonConfig": {
+		"ignore": [
+			"**.json"
+		]
 	}
 }
